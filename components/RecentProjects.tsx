@@ -25,10 +25,11 @@ const RecentProjects = () => {
                   className="relative w-full h-full overflow-hidden lg:rounded-3xl"
                   style={{ backgroundColor: '#13162D' }}
                 >
-                  <Image fill src="/bg.png" alt="bgimg" className='!relative' />
+                  <Image fill priority src="/bg.png" alt="bgimg" className='!relative' />
                 </div>
                 <Image
                   fill
+                  priority
                   src={item.img}
                   alt="cover"
                   className="z-10 absolute !top-auto !bottom-0 !w-auto !h-auto !left-auto !right-auto"
