@@ -3,6 +3,7 @@ import { FaLocationArrow } from 'react-icons/fa6';
 import MagicButton from './MagicButton';
 import { Spotlight } from './ui/Spotlight';
 import { TextGenerateEffect } from './ui/TextGenerateEffect';
+import Link from 'next/link';
 
 const Hero = () => {
   return (
@@ -43,13 +44,13 @@ const Hero = () => {
             Hi! I&apos;m Qurban, a Next.js Developer based in Hunza, Pakistan.
           </p>
 
-          <a href="#about">
+          <Link href="#about">
             <MagicButton
               title="Show my work"
               icon={<FaLocationArrow />}
               position="right"
             />
-          </a>
+          </Link>
         </div>
       </div>
     </div>
