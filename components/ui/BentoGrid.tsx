@@ -9,6 +9,7 @@ import { BackgroundGradientAnimation } from './GradientBg';
 import GridGlobe from './GridGlobe';
 import animationData from '@/data/confetti.json';
 import MagicButton from '../MagicButton';
+import Image from 'next/image';
 
 export const BentoGrid = ({
   className,
@@ -83,7 +84,8 @@ export const BentoGridItem = ({
       <div className={`${id === 6 && 'flex justify-center'} h-full`}>
         <div className="w-full h-full absolute">
           {img && (
-            <img
+            <Image
+              fill
               src={img}
               alt={img}
               className={cn(imgClassName, 'object-cover object-center ')}
@@ -96,11 +98,11 @@ export const BentoGridItem = ({
           } `}
         >
           {spareImg && (
-            <img
+            <Image
+              fill
               src={spareImg}
               alt={spareImg}
-              //   width={220}
-              className="object-cover object-center w-full h-full"
+              className="!relative object-cover object-center w-full h-full"
             />
           )}
         </div>
@@ -116,7 +118,7 @@ export const BentoGridItem = ({
             'group-hover/bento:translate-x-2 transition duration-200 relative md:h-full min-h-40 flex flex-col px-5 p-5 lg:p-10'
           )}
         >
-          <div className="font-sans font-extralight md:max-w-32 md:text-xs lg:text-base text-sm text-[#C1C2D3] z-10">
+          <div className="font-sans font-extralight md:max-w-34 md:text-xs lg:text-base text-sm text-[#C1C2D3] z-10">
             {description}
           </div>
           <div

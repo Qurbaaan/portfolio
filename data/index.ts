@@ -52,7 +52,7 @@ export const gridItems = [
     title: "Currently building a JS Animation library",
     description: "The Inside Scoop",
     className: "md:col-span-3 md:row-span-2",
-    imgClassName: "absolute right-0 bottom-0 md:w-96 w-60",
+    imgClassName: "absolute !left-auto !right-0 !top-auto !bottom-0 md:!w-96 !w-60 !h-auto",
     titleClassName: "justify-center md:justify-start lg:justify-center",
     img: "/b5.svg",
     spareImg: "/grid.svg",
